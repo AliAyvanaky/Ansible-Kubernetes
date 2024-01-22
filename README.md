@@ -12,6 +12,10 @@
     mkdir -p $HOME/.kube
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+    mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
     ```
 
 6. Source: [Ansible Galaxy - geerlingguy/kubernetes](https://galaxy.ansible.com/ui/standalone/roles/geerlingguy/kubernetes/install/)
